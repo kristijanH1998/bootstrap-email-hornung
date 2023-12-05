@@ -1,0 +1,23 @@
+.my-row{
+   min-height: 100vh;
+}
+.dark-bckg1 {
+    background: #2F4F4F;
+}
+.dark-bckg2 {
+    background: #2d2d2d;
+}
+.dark-bckg3 {
+    background: #191970;
+}
+.email-list{
+    padding: 10px;
+    overflow-y: scroll;
+    height: 800px;
+}
+* {
+    color: white;
+}
+.my-navbar {
+    width: 100%;
+}
