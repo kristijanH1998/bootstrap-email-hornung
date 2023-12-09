@@ -12,6 +12,9 @@ const msg11 = document.getElementById("msg11");
 
 const fullMsgTitle = document.getElementById("fullMsgTitle");
 const fullMsgBody = document.getElementById("fullMsgBody");
+const fullMsgName = document.getElementById("fullMsgName");
+const fullMsgDate = document.getElementById("fullMsgDate");
+
 
 //cards is an array containing all message cards in the message list
 let cards = document.querySelectorAll("div.card.w-100");
@@ -25,6 +28,8 @@ document.body.addEventListener('click', function(event){
         if(card.contains (event.target)){
             fullMsgTitle.textContent = card.querySelector("div div h5").textContent;
             fullMsgBody.textContent = card.querySelector("div div p").textContent;
+            fullMsgName.textContent = card.querySelector("div div h6").textContent;
+            fullMsgDate.textContent = card.querySelector("div div h6:nth-child(3)").textContent;
         }  
     });
 });
