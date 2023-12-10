@@ -1,15 +1,3 @@
-const msg1 = document.getElementById("msg1");
-const msg2 = document.getElementById("msg2");
-const msg3 = document.getElementById("msg3");
-const msg4 = document.getElementById("msg4");
-const msg5 = document.getElementById("msg5");
-const msg6 = document.getElementById("msg6");
-const msg7 = document.getElementById("msg7");
-const msg8 = document.getElementById("msg8");
-const msg9 = document.getElementById("msg9");
-const msg10 = document.getElementById("msg10");
-const msg11 = document.getElementById("msg11");
-
 const fullMsgTitle = document.getElementById("fullMsgTitle");
 const fullMsgBody = document.getElementById("fullMsgBody");
 const fullMsgName = document.getElementById("fullMsgName");
