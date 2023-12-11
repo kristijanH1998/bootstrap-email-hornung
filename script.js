@@ -21,3 +21,19 @@ document.body.addEventListener('click', function(event){
         }  
     });
 });
+
+document.getElementById("navbarToggler").onclick = function() {
+    var navbarColumn = document.getElementById("navbarCol");
+    var nonNavbarColumn = document.getElementById("nonNavbarCol");
+    if (navbarColumn.classList.contains("d-sm-block")){
+        navbarColumn.classList.remove("d-sm-block");
+        navbarColumn.classList.add("d-none");
+        nonNavbarColumn.classList.remove("col-sm-10");
+        nonNavbarColumn.classList.add("col-sm-12");
+    } else {
+        navbarColumn.classList.add("d-sm-block");
+        navbarColumn.classList.remove("d-none");
+        nonNavbarColumn.classList.add("col-sm-10");
+        nonNavbarColumn.classList.remove("col-sm-12");
+    }
+};
