@@ -22,10 +22,10 @@ document.body.addEventListener('click', function(event){
     });
 });
 var navbarToggleBtns = document.getElementsByClassName("navbarToggleBtn");
+var navbarColumn = document.getElementById("navbarCol");
+var nonNavbarColumn = document.getElementById("nonNavbarCol");
 for(var i = 0; i < navbarToggleBtns.length; i++) {
     navbarToggleBtns[i].onclick = function() {
-        var navbarColumn = document.getElementById("navbarCol");
-        var nonNavbarColumn = document.getElementById("nonNavbarCol");
         if (navbarColumn.classList.contains("d-sm-block")){
             navbarColumn.classList.remove("d-sm-block");
             navbarColumn.classList.add("d-none");
@@ -37,5 +37,16 @@ for(var i = 0; i < navbarToggleBtns.length; i++) {
             nonNavbarColumn.classList.add("col-sm-10");
             nonNavbarColumn.classList.remove("col-sm-12");
         }
-    };
-}
+    }
+};
+if (window.innerWidth < 768) {
+    
+    navbarToggleBtns[1].onclick = function() {
+        nonNavbarColumn.classList.add("d-none");
+        navbarColumn.classList.remove("d-none");
+    }
+    navbarToggleBtns[0].onclick = function() {
+        nonNavbarColumn.classList.remove("d-none");
+        navbarColumn.classList.add("d-none");
+    }
+};
