@@ -39,8 +39,7 @@ for(var i = 0; i < navbarToggleBtns.length; i++) {
         }
     }
 };
-if (window.innerWidth < 768) {
-    
+if (window.innerWidth < 576) {
     navbarToggleBtns[1].onclick = function() {
         nonNavbarColumn.classList.add("d-none");
         navbarColumn.classList.remove("d-none");
@@ -50,3 +49,4 @@ if (window.innerWidth < 768) {
         navbarColumn.classList.add("d-none");
     }
 };
+
