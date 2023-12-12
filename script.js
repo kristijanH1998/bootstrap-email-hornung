@@ -44,11 +44,11 @@ for(var i = 0; i < navbarToggleBtns.length; i++) {
             if (navbarColumn.classList.contains("d-sm-block")){
                 navbarColumn.classList.remove("d-sm-block");
                 nonNavbarColumn.classList.remove("col-sm-10");
-                nonNavbarColumn.classList.add("col-sm-12");
+                nonNavbarColumn.classList.add("col-sm");
             } else {
                 navbarColumn.classList.add("d-sm-block");
                 nonNavbarColumn.classList.add("col-sm-10");
-                nonNavbarColumn.classList.remove("col-sm-12");
+                nonNavbarColumn.classList.remove("col-sm");
             }
         } 
     }
