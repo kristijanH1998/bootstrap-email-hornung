@@ -43,10 +43,12 @@ for(var i = 0; i < navbarToggleBtns.length; i++) {
         } else {
             if (navbarColumn.classList.contains("d-sm-block")){
                 navbarColumn.classList.remove("d-sm-block");
+                navbarColumn.classList.add("d-sm-none");
                 nonNavbarColumn.classList.remove("col-sm-10");
                 nonNavbarColumn.classList.add("col-sm");
             } else {
                 navbarColumn.classList.add("d-sm-block");
+                navbarColumn.classList.remove("d-sm-none");
                 nonNavbarColumn.classList.add("col-sm-10");
                 nonNavbarColumn.classList.remove("col-sm");
             }
