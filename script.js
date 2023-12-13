@@ -76,8 +76,14 @@ document.getElementById("inbox-btn").onclick = function() {
     }
     document.getElementsByClassName("inbox")[0].classList.remove("d-none");
     if((window.innerWidth >= 576) && (window.innerWidth < 768)){
-        document.getElementById("message-list-col").classList.remove("d-sm-none");
-        document.getElementById("message-body-col").classList.remove("d-sm-block");
+        if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
+        document.getElementById("message-body-col").classList.contains("d-sm-block")){
+            document.getElementById("message-list-col").classList.remove("d-sm-none");
+            document.getElementById("message-body-col").classList.remove("d-sm-block");
+        } else {
+            document.getElementById("message-list-col").classList.remove("d-none");
+            document.getElementById("message-body-col").classList.add("d-none");
+        }
     }
     if(window.innerWidth < 576) {
         if (navbarColumn.classList.contains("d-none")){
@@ -106,8 +112,14 @@ document.getElementById("tagged-btn").onclick = function() {
     }
     document.getElementsByClassName("tagged")[0].classList.remove("d-none");
     if((window.innerWidth >= 576) && (window.innerWidth < 768)){
-        document.getElementById("message-list-col").classList.remove("d-sm-none");
-        document.getElementById("message-body-col").classList.remove("d-sm-block");
+        if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
+        document.getElementById("message-body-col").classList.contains("d-sm-block")){
+            document.getElementById("message-list-col").classList.remove("d-sm-none");
+            document.getElementById("message-body-col").classList.remove("d-sm-block");
+        } else {
+            document.getElementById("message-list-col").classList.remove("d-none");
+            document.getElementById("message-body-col").classList.add("d-none");
+        }
     }
     if(window.innerWidth < 576) {
         if (navbarColumn.classList.contains("d-none")){
@@ -136,8 +148,14 @@ document.getElementById("important-btn").onclick = function() {
     }
     document.getElementsByClassName("important")[0].classList.remove("d-none");
     if((window.innerWidth >= 576) && (window.innerWidth < 768)){
-        document.getElementById("message-list-col").classList.remove("d-sm-none");
-        document.getElementById("message-body-col").classList.remove("d-sm-block");
+        if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
+        document.getElementById("message-body-col").classList.contains("d-sm-block")){
+            document.getElementById("message-list-col").classList.remove("d-sm-none");
+            document.getElementById("message-body-col").classList.remove("d-sm-block");
+        } else {
+            document.getElementById("message-list-col").classList.remove("d-none");
+            document.getElementById("message-body-col").classList.add("d-none");
+        }
     }
     if(window.innerWidth < 576) {
         if (navbarColumn.classList.contains("d-none")){
@@ -166,8 +184,14 @@ document.getElementById("sent-btn").onclick = function() {
     }
     document.getElementsByClassName("sent")[0].classList.remove("d-none");
     if((window.innerWidth >= 576) && (window.innerWidth < 768)){
-        document.getElementById("message-list-col").classList.remove("d-sm-none");
-        document.getElementById("message-body-col").classList.remove("d-sm-block");
+        if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
+        document.getElementById("message-body-col").classList.contains("d-sm-block")){
+            document.getElementById("message-list-col").classList.remove("d-sm-none");
+            document.getElementById("message-body-col").classList.remove("d-sm-block");
+        } else {
+            document.getElementById("message-list-col").classList.remove("d-none");
+            document.getElementById("message-body-col").classList.add("d-none");
+        }
     }
     if(window.innerWidth < 576) {
         if (navbarColumn.classList.contains("d-none")){
@@ -196,8 +220,14 @@ document.getElementById("drafts-btn").onclick = function() {
     }
     document.getElementsByClassName("drafts")[0].classList.remove("d-none");
     if((window.innerWidth >= 576) && (window.innerWidth < 768)){
-        document.getElementById("message-list-col").classList.remove("d-sm-none");
-        document.getElementById("message-body-col").classList.remove("d-sm-block");
+        if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
+        document.getElementById("message-body-col").classList.contains("d-sm-block")){
+            document.getElementById("message-list-col").classList.remove("d-sm-none");
+            document.getElementById("message-body-col").classList.remove("d-sm-block");
+        } else {
+            document.getElementById("message-list-col").classList.remove("d-none");
+            document.getElementById("message-body-col").classList.add("d-none");
+        }
     }
     if(window.innerWidth < 576) {
         if (navbarColumn.classList.contains("d-none")){
@@ -226,8 +256,14 @@ document.getElementById("trash-btn").onclick = function() {
     }
     document.getElementsByClassName("trash")[0].classList.remove("d-none");
     if((window.innerWidth >= 576) && (window.innerWidth < 768)){
-        document.getElementById("message-list-col").classList.remove("d-sm-none");
-        document.getElementById("message-body-col").classList.remove("d-sm-block");
+        if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
+        document.getElementById("message-body-col").classList.contains("d-sm-block")){
+            document.getElementById("message-list-col").classList.remove("d-sm-none");
+            document.getElementById("message-body-col").classList.remove("d-sm-block");
+        } else {
+            document.getElementById("message-list-col").classList.remove("d-none");
+            document.getElementById("message-body-col").classList.add("d-none");
+        }
     }
     if(window.innerWidth < 576) {
         if (navbarColumn.classList.contains("d-none")){
