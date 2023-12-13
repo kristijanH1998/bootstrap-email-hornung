@@ -3,7 +3,6 @@ const fullMsgBody = document.getElementById("fullMsgBody");
 const fullMsgName = document.getElementById("fullMsgName");
 const fullMsgDate = document.getElementById("fullMsgDate");
 
-
 //cards is an array containing all message cards in the message list
 let cards = document.querySelectorAll("div.card.w-100");
 
@@ -21,6 +20,10 @@ document.body.addEventListener('click', function(event){
             if((window.innerWidth >= 576) && (window.innerWidth < 768)){
                 document.getElementById("message-list-col").classList.add("d-sm-none");
                 document.getElementById("message-body-col").classList.add("d-sm-block");
+            } 
+            if(window.innerWidth < 576){
+                document.getElementById("message-list-col").classList.add("d-none");
+                document.getElementById("message-body-col").classList.remove("d-none");
             } 
         }  
     });
@@ -88,6 +91,8 @@ document.getElementById("inbox-btn").onclick = function() {
             nonNavbarColumn.classList.add("d-block");
             nonNavbarColumn.classList.remove("d-none");
         }
+        document.getElementById("message-list-col").classList.remove("d-none");
+        document.getElementById("message-body-col").classList.add("d-none");
     }
 };
 //show tagged message list when "tagged" button is clicked
@@ -116,6 +121,8 @@ document.getElementById("tagged-btn").onclick = function() {
             nonNavbarColumn.classList.add("d-block");
             nonNavbarColumn.classList.remove("d-none");
         }
+        document.getElementById("message-list-col").classList.remove("d-none");
+        document.getElementById("message-body-col").classList.add("d-none");
     }
 };
 //show important message list when "important" button is clicked
@@ -144,6 +151,8 @@ document.getElementById("important-btn").onclick = function() {
             nonNavbarColumn.classList.add("d-block");
             nonNavbarColumn.classList.remove("d-none");
         }
+        document.getElementById("message-list-col").classList.remove("d-none");
+        document.getElementById("message-body-col").classList.add("d-none");
     }
 };
 //show sent message list when "sent" button is clicked
@@ -172,6 +181,8 @@ document.getElementById("sent-btn").onclick = function() {
             nonNavbarColumn.classList.add("d-block");
             nonNavbarColumn.classList.remove("d-none");
         }
+        document.getElementById("message-list-col").classList.remove("d-none");
+        document.getElementById("message-body-col").classList.add("d-none");
     }
 };
 //show drafts message list when "drafts" button is clicked
@@ -200,6 +211,8 @@ document.getElementById("drafts-btn").onclick = function() {
             nonNavbarColumn.classList.add("d-block");
             nonNavbarColumn.classList.remove("d-none");
         }
+        document.getElementById("message-list-col").classList.remove("d-none");
+        document.getElementById("message-body-col").classList.add("d-none");
     }
 };
 //show trash message list when "trash" button is clicked
@@ -228,5 +241,7 @@ document.getElementById("trash-btn").onclick = function() {
             nonNavbarColumn.classList.add("d-block");
             nonNavbarColumn.classList.remove("d-none");
         }
+        document.getElementById("message-list-col").classList.remove("d-none");
+        document.getElementById("message-body-col").classList.add("d-none");
     }
 };
