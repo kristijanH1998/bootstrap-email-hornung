@@ -18,6 +18,10 @@ document.body.addEventListener('click', function(event){
             fullMsgBody.textContent = card.querySelector("div div p").textContent;
             fullMsgName.textContent = card.querySelector("div div h6").textContent;
             fullMsgDate.textContent = card.querySelector("div div h6:nth-child(3)").textContent;
+            if((window.innerWidth >= 576) && (window.innerWidth < 768)){
+                document.getElementById("message-list-col").classList.add("d-sm-none");
+                document.getElementById("message-body-col").classList.add("d-sm-block");
+            } 
         }  
     });
 });
@@ -58,7 +62,7 @@ for(var i = 0; i < navbarToggleBtns.length; i++) {
         } 
     }
 }
-
+//show inbox message list when "inbox" button is clicked
 document.getElementById("inbox-btn").onclick = function() {
     let folders = document.getElementsByClassName("email-list");
     console.log(folders);
@@ -68,8 +72,12 @@ document.getElementById("inbox-btn").onclick = function() {
         }
     }
     document.getElementsByClassName("inbox")[0].classList.remove("d-none");
+    if((window.innerWidth >= 576) && (window.innerWidth < 768)){
+        document.getElementById("message-list-col").classList.remove("d-sm-none");
+        document.getElementById("message-body-col").classList.remove("d-sm-block");
+    }
 };
-
+//show tagged message list when "tagged" button is clicked
 document.getElementById("tagged-btn").onclick = function() {
     let folders = document.getElementsByClassName("email-list");
     console.log(folders);
@@ -79,8 +87,12 @@ document.getElementById("tagged-btn").onclick = function() {
         }
     }
     document.getElementsByClassName("tagged")[0].classList.remove("d-none");
+    if((window.innerWidth >= 576) && (window.innerWidth < 768)){
+        document.getElementById("message-list-col").classList.remove("d-sm-none");
+        document.getElementById("message-body-col").classList.remove("d-sm-block");
+    }
 };
-
+//show important message list when "important" button is clicked
 document.getElementById("important-btn").onclick = function() {
     let folders = document.getElementsByClassName("email-list");
     console.log(folders);
@@ -90,8 +102,12 @@ document.getElementById("important-btn").onclick = function() {
         }
     }
     document.getElementsByClassName("important")[0].classList.remove("d-none");
+    if((window.innerWidth >= 576) && (window.innerWidth < 768)){
+        document.getElementById("message-list-col").classList.remove("d-sm-none");
+        document.getElementById("message-body-col").classList.remove("d-sm-block");
+    }
 };
-
+//show sent message list when "sent" button is clicked
 document.getElementById("sent-btn").onclick = function() {
     let folders = document.getElementsByClassName("email-list");
     console.log(folders);
@@ -101,8 +117,12 @@ document.getElementById("sent-btn").onclick = function() {
         }
     }
     document.getElementsByClassName("sent")[0].classList.remove("d-none");
+    if((window.innerWidth >= 576) && (window.innerWidth < 768)){
+        document.getElementById("message-list-col").classList.remove("d-sm-none");
+        document.getElementById("message-body-col").classList.remove("d-sm-block");
+    }
 };
-
+//show drafts message list when "drafts" button is clicked
 document.getElementById("drafts-btn").onclick = function() {
     let folders = document.getElementsByClassName("email-list");
     console.log(folders);
@@ -112,8 +132,12 @@ document.getElementById("drafts-btn").onclick = function() {
         }
     }
     document.getElementsByClassName("drafts")[0].classList.remove("d-none");
+    if((window.innerWidth >= 576) && (window.innerWidth < 768)){
+        document.getElementById("message-list-col").classList.remove("d-sm-none");
+        document.getElementById("message-body-col").classList.remove("d-sm-block");
+    }
 };
-
+//show trash message list when "trash" button is clicked
 document.getElementById("trash-btn").onclick = function() {
     let folders = document.getElementsByClassName("email-list");
     console.log(folders);
@@ -123,4 +147,8 @@ document.getElementById("trash-btn").onclick = function() {
         }
     }
     document.getElementsByClassName("trash")[0].classList.remove("d-none");
+    if((window.innerWidth >= 576) && (window.innerWidth < 768)){
+        document.getElementById("message-list-col").classList.remove("d-sm-none");
+        document.getElementById("message-body-col").classList.remove("d-sm-block");
+    }
 };
