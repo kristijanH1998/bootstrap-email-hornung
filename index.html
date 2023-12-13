@@ -24,12 +24,12 @@
                                   <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <button type="button" class="btn btn-warning">Compose</button>
-                                <button type="button" class="btn btn-outline-light">Inbox</button>
-                                <button type="button" class="btn btn-outline-light">Tagged</button>
-                                <button type="button" class="btn btn-outline-light">Important</button>
-                                <button type="button" class="btn btn-outline-light">Sent</button>
-                                <button type="button" class="btn btn-outline-light">Drafts</button>
-                                <button type="button" class="btn btn-outline-light">Trash</button>
+                                <button type="button" class="btn btn-outline-light" id="inbox-btn">Inbox</button>
+                                <button type="button" class="btn btn-outline-light" id="tagged-btn">Tagged</button>
+                                <button type="button" class="btn btn-outline-light" id="important-btn">Important</button>
+                                <button type="button" class="btn btn-outline-light" id="sent-btn">Sent</button>
+                                <button type="button" class="btn btn-outline-light" id="drafts-btn">Drafts</button>
+                                <button type="button" class="btn btn-outline-light" id="trash-btn">Trash</button>
                                 <button type="button" class="btn btn-light">More</button>
                             </div>
                           </div>
@@ -50,8 +50,8 @@
                 </div>
                 <div class="row my-row">
                     <div class="col-md-6 dark-bckg1" >
-                        <div class="email-list my-2 d-flex row-gap-3 flex-column vh-100">
-                            <a href="#" class="text-decoration-none" id="msg1">
+                        <div class="email-list my-2 d-flex row-gap-3 flex-column vh-100 inbox">
+                            <a href="#" class="text-decoration-none">
                                 <div class="card w-100">
                                     <div class="card-body">
                                       <h5 class="card-title">Title 1</h5>
@@ -71,7 +71,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="text-decoration-none" id="msg2">
+                            <a href="#" class="text-decoration-none">
                                 <div class="card w-100">
                                     <div class="card-body">
                                       <h5 class="card-title">Title 2</h5>
@@ -81,7 +81,7 @@
                                     </div>
                                   </div>
                             </a>
-                            <a href="#" class="text-decoration-none" id="msg3">
+                            <a href="#" class="text-decoration-none">
                               <div class="card w-100">
                                   <div class="card-body">
                                     <h5 class="card-title">Title 3</h5>
@@ -91,7 +91,7 @@
                                   </div>
                                 </div>
                               </a>
-                            <a href="#" class="text-decoration-none" id="msg4">
+                            <a href="#" class="text-decoration-none">
                                   <div class="card w-100">
                                       <div class="card-body">
                                         <h5 class="card-title">Title 4</h5>
@@ -101,7 +101,7 @@
                                       </div>
                                     </div>
                               </a>
-                            <a href="#" class="text-decoration-none" id="msg5">
+                            <a href="#" class="text-decoration-none">
                                 <div class="card w-100">
                                     <div class="card-body">
                                       <h5 class="card-title">Title 5</h5>
@@ -111,7 +111,7 @@
                                     </div>
                                   </div>
                             </a>
-                          <a href="#" class="text-decoration-none" id="msg6">
+                          <a href="#" class="text-decoration-none">
                               <div class="card w-100">
                                   <div class="card-body">
                                     <h5 class="card-title">Title 6</h5>
@@ -121,7 +121,7 @@
                                   </div>
                                 </div>
                           </a>
-                          <a href="#" class="text-decoration-none" id="msg7">
+                          <a href="#" class="text-decoration-none">
                             <div class="card w-100">
                                 <div class="card-body">
                                   <h5 class="card-title">Title 7</h5>
@@ -131,7 +131,7 @@
                                 </div>
                               </div>
                         </a>
-                        <a href="#" class="text-decoration-none" id="msg8">
+                        <a href="#" class="text-decoration-none">
                           <div class="card w-100">
                               <div class="card-body">
                                 <h5 class="card-title">Title 8</h5>
@@ -141,7 +141,7 @@
                               </div>
                             </div>
                       </a>
-                      <a href="#" class="text-decoration-none" id="msg9">
+                      <a href="#" class="text-decoration-none">
                         <div class="card w-100">
                             <div class="card-body">
                               <h5 class="card-title">Title 9</h5>
@@ -151,7 +151,7 @@
                             </div>
                           </div>
                     </a>
-                    <a href="#" class="text-decoration-none" id="msg10">
+                    <a href="#" class="text-decoration-none">
                       <div class="card w-100">
                           <div class="card-body">
                             <h5 class="card-title">Title 10</h5>
@@ -161,7 +161,7 @@
                           </div>
                         </div>
                   </a>
-                  <a href="#" class="text-decoration-none" id="msg11">
+                  <a href="#" class="text-decoration-none">
                     <div class="card w-100">
                         <div class="card-body">
                           <h5 class="card-title">Title 11</h5>
@@ -171,6 +171,106 @@
                         </div>
                       </div>
                 </a>
+                        </div>
+                        <div class="d-none email-list my-2 d-flex row-gap-3 flex-column vh-100 tagged">
+                          <a href="#" class="text-decoration-none">
+                            <div class="card w-100">
+                                <div class="card-body">
+                                  <h5 class="card-title">Tagged 1</h5>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted">Sender name (tagged) 1</h6>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted float-end">Date (tagged) 1</h6>
+                                  <p class="card-text text-dark">text (tagged) 1</p>
+                                </div>
+                              </div>
+                          </a>
+                          <a href="#" class="text-decoration-none">
+                            <div class="card w-100">
+                                <div class="card-body">
+                                  <h5 class="card-title">Tagged 2</h5>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted">Sender name (tagged) 2</h6>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted float-end">Date (tagged) 2</h6>
+                                  <p class="card-text text-dark">text (tagged) 2</p>
+                                </div>
+                              </div>
+                          </a>
+                        </div>
+                        <div class="d-none email-list my-2 d-flex row-gap-3 flex-column vh-100 important">
+                          <a href="#" class="text-decoration-none">
+                            <div class="card w-100">
+                                <div class="card-body">
+                                  <h5 class="card-title">Important 1</h5>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted">Sender name (important) 1</h6>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted float-end">Date (important) 1</h6>
+                                  <p class="card-text text-dark">text (important) 1</p>
+                                </div>
+                              </div>
+                          </a>
+                        </div>
+                        <div class="d-none email-list my-2 d-flex row-gap-3 flex-column vh-100 sent">
+                          <a href="#" class="text-decoration-none">
+                            <div class="card w-100">
+                                <div class="card-body">
+                                  <h5 class="card-title">Sent 1</h5>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted">Sender name (sent) 1</h6>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted float-end">Date (sent) 1</h6>
+                                  <p class="card-text text-dark">text (sent) 1</p>
+                                </div>
+                              </div>
+                          </a>
+                          <a href="#" class="text-decoration-none">
+                            <div class="card w-100">
+                                <div class="card-body">
+                                  <h5 class="card-title">Sent 2</h5>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted">Sender name (sent) 2</h6>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted float-end">Date (sent) 2</h6>
+                                  <p class="card-text text-dark">text (sent) 2</p>
+                                </div>
+                              </div>
+                          </a>
+                        </div>
+                        <div class="d-none email-list my-2 d-flex row-gap-3 flex-column vh-100 drafts">
+                          <a href="#" class="text-decoration-none">
+                            <div class="card w-100">
+                                <div class="card-body">
+                                  <h5 class="card-title">Drafts 1</h5>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted">Sender name (drafts) 1</h6>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted float-end">Date (drafts) 1</h6>
+                                  <p class="card-text text-dark">text (drafts) 1</p>
+                                </div>
+                              </div>
+                          </a>
+                        </div>
+                        <div class="d-none email-list my-2 d-flex row-gap-3 flex-column vh-100 trash">
+                          <a href="#" class="text-decoration-none">
+                            <div class="card w-100">
+                                <div class="card-body">
+                                  <h5 class="card-title">Trash 1</h5>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted">Sender name (trash) 1</h6>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted float-end">Date (trash) 1</h6>
+                                  <p class="card-text text-dark">text (trash) 1</p>
+                                </div>
+                            </div>
+                          </a>
+                          <a href="#" class="text-decoration-none">
+                            <div class="card w-100">
+                                <div class="card-body">
+                                  <h5 class="card-title">Trash 2</h5>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted">Sender name (trash) 2</h6>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted float-end">Date (trash) 2</h6>
+                                  <p class="card-text text-dark">text (trash) 2</p>
+                                </div>
+                            </div>
+                          </a>
+                          <a href="#" class="text-decoration-none">
+                            <div class="card w-100">
+                                <div class="card-body">
+                                  <h5 class="card-title">Trash 3</h5>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted">Sender name (trash) 3</h6>
+                                  <h6 class="d-inline card-subtitle mb-2 text-muted float-end">Date (trash) 3</h6>
+                                  <p class="card-text text-dark">text (trash) 3</p>
+                                </div>
+                            </div>
+                          </a>
                         </div>
                     </div>
                     <div class="d-none d-md-block col-md-6 dark-bckg2 p-4" >

@@ -26,6 +26,9 @@ var navbarToggleBtns = document.getElementsByClassName("navbarToggleBtn");
 var navbarColumn = document.getElementById("navbarCol");
 var nonNavbarColumn = document.getElementById("nonNavbarCol");
 
+//makes both hamburger menu toggle buttons work; when clicked, each button collapses or hides the vertical navbar
+//(depending on whether the navbar is currently showing or not); the logic is different for extra small screen
+//size compared to other screen sizes
 for(var i = 0; i < navbarToggleBtns.length; i++) {
     navbarToggleBtns[i].onclick = function() {
         if (window.innerWidth < 576){
@@ -56,3 +59,68 @@ for(var i = 0; i < navbarToggleBtns.length; i++) {
     }
 }
 
+document.getElementById("inbox-btn").onclick = function() {
+    let folders = document.getElementsByClassName("email-list");
+    console.log(folders);
+    for(var i = 0; i < folders.length; i++) {
+        if(!(folders[i].classList.contains("d-none"))){
+            folders[i].classList.add("d-none")
+        }
+    }
+    document.getElementsByClassName("inbox")[0].classList.remove("d-none");
+};
+
+document.getElementById("tagged-btn").onclick = function() {
+    let folders = document.getElementsByClassName("email-list");
+    console.log(folders);
+    for(var i = 0; i < folders.length; i++) {
+        if(!(folders[i].classList.contains("d-none"))){
+            folders[i].classList.add("d-none")
+        }
+    }
+    document.getElementsByClassName("tagged")[0].classList.remove("d-none");
+};
+
+document.getElementById("important-btn").onclick = function() {
+    let folders = document.getElementsByClassName("email-list");
+    console.log(folders);
+    for(var i = 0; i < folders.length; i++) {
+        if(!(folders[i].classList.contains("d-none"))){
+            folders[i].classList.add("d-none")
+        }
+    }
+    document.getElementsByClassName("important")[0].classList.remove("d-none");
+};
+
+document.getElementById("sent-btn").onclick = function() {
+    let folders = document.getElementsByClassName("email-list");
+    console.log(folders);
+    for(var i = 0; i < folders.length; i++) {
+        if(!(folders[i].classList.contains("d-none"))){
+            folders[i].classList.add("d-none")
+        }
+    }
+    document.getElementsByClassName("sent")[0].classList.remove("d-none");
+};
+
+document.getElementById("drafts-btn").onclick = function() {
+    let folders = document.getElementsByClassName("email-list");
+    console.log(folders);
+    for(var i = 0; i < folders.length; i++) {
+        if(!(folders[i].classList.contains("d-none"))){
+            folders[i].classList.add("d-none")
+        }
+    }
+    document.getElementsByClassName("drafts")[0].classList.remove("d-none");
+};
+
+document.getElementById("trash-btn").onclick = function() {
+    let folders = document.getElementsByClassName("email-list");
+    console.log(folders);
+    for(var i = 0; i < folders.length; i++) {
+        if(!(folders[i].classList.contains("d-none"))){
+            folders[i].classList.add("d-none")
+        }
+    }
+    document.getElementsByClassName("trash")[0].classList.remove("d-none");
+};
