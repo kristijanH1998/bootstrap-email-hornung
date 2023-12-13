@@ -76,6 +76,19 @@ document.getElementById("inbox-btn").onclick = function() {
         document.getElementById("message-list-col").classList.remove("d-sm-none");
         document.getElementById("message-body-col").classList.remove("d-sm-block");
     }
+    if(window.innerWidth < 576) {
+        if (navbarColumn.classList.contains("d-none")){
+            navbarColumn.classList.remove("d-none");
+            navbarColumn.classList.add("d-block");
+            nonNavbarColumn.classList.remove("d-block");
+            nonNavbarColumn.classList.add("d-none");
+        } else {
+            navbarColumn.classList.add("d-none");
+            navbarColumn.classList.remove("d-block");
+            nonNavbarColumn.classList.add("d-block");
+            nonNavbarColumn.classList.remove("d-none");
+        }
+    }
 };
 //show tagged message list when "tagged" button is clicked
 document.getElementById("tagged-btn").onclick = function() {
@@ -90,6 +103,19 @@ document.getElementById("tagged-btn").onclick = function() {
     if((window.innerWidth >= 576) && (window.innerWidth < 768)){
         document.getElementById("message-list-col").classList.remove("d-sm-none");
         document.getElementById("message-body-col").classList.remove("d-sm-block");
+    }
+    if(window.innerWidth < 576) {
+        if (navbarColumn.classList.contains("d-none")){
+            navbarColumn.classList.remove("d-none");
+            navbarColumn.classList.add("d-block");
+            nonNavbarColumn.classList.remove("d-block");
+            nonNavbarColumn.classList.add("d-none");
+        } else {
+            navbarColumn.classList.add("d-none");
+            navbarColumn.classList.remove("d-block");
+            nonNavbarColumn.classList.add("d-block");
+            nonNavbarColumn.classList.remove("d-none");
+        }
     }
 };
 //show important message list when "important" button is clicked
@@ -106,6 +132,19 @@ document.getElementById("important-btn").onclick = function() {
         document.getElementById("message-list-col").classList.remove("d-sm-none");
         document.getElementById("message-body-col").classList.remove("d-sm-block");
     }
+    if(window.innerWidth < 576) {
+        if (navbarColumn.classList.contains("d-none")){
+            navbarColumn.classList.remove("d-none");
+            navbarColumn.classList.add("d-block");
+            nonNavbarColumn.classList.remove("d-block");
+            nonNavbarColumn.classList.add("d-none");
+        } else {
+            navbarColumn.classList.add("d-none");
+            navbarColumn.classList.remove("d-block");
+            nonNavbarColumn.classList.add("d-block");
+            nonNavbarColumn.classList.remove("d-none");
+        }
+    }
 };
 //show sent message list when "sent" button is clicked
 document.getElementById("sent-btn").onclick = function() {
@@ -120,6 +159,19 @@ document.getElementById("sent-btn").onclick = function() {
     if((window.innerWidth >= 576) && (window.innerWidth < 768)){
         document.getElementById("message-list-col").classList.remove("d-sm-none");
         document.getElementById("message-body-col").classList.remove("d-sm-block");
+    }
+    if(window.innerWidth < 576) {
+        if (navbarColumn.classList.contains("d-none")){
+            navbarColumn.classList.remove("d-none");
+            navbarColumn.classList.add("d-block");
+            nonNavbarColumn.classList.remove("d-block");
+            nonNavbarColumn.classList.add("d-none");
+        } else {
+            navbarColumn.classList.add("d-none");
+            navbarColumn.classList.remove("d-block");
+            nonNavbarColumn.classList.add("d-block");
+            nonNavbarColumn.classList.remove("d-none");
+        }
     }
 };
 //show drafts message list when "drafts" button is clicked
@@ -136,6 +188,19 @@ document.getElementById("drafts-btn").onclick = function() {
         document.getElementById("message-list-col").classList.remove("d-sm-none");
         document.getElementById("message-body-col").classList.remove("d-sm-block");
     }
+    if(window.innerWidth < 576) {
+        if (navbarColumn.classList.contains("d-none")){
+            navbarColumn.classList.remove("d-none");
+            navbarColumn.classList.add("d-block");
+            nonNavbarColumn.classList.remove("d-block");
+            nonNavbarColumn.classList.add("d-none");
+        } else {
+            navbarColumn.classList.add("d-none");
+            navbarColumn.classList.remove("d-block");
+            nonNavbarColumn.classList.add("d-block");
+            nonNavbarColumn.classList.remove("d-none");
+        }
+    }
 };
 //show trash message list when "trash" button is clicked
 document.getElementById("trash-btn").onclick = function() {
@@ -150,5 +215,18 @@ document.getElementById("trash-btn").onclick = function() {
     if((window.innerWidth >= 576) && (window.innerWidth < 768)){
         document.getElementById("message-list-col").classList.remove("d-sm-none");
         document.getElementById("message-body-col").classList.remove("d-sm-block");
+    }
+    if(window.innerWidth < 576) {
+        if (navbarColumn.classList.contains("d-none")){
+            navbarColumn.classList.remove("d-none");
+            navbarColumn.classList.add("d-block");
+            nonNavbarColumn.classList.remove("d-block");
+            nonNavbarColumn.classList.add("d-none");
+        } else {
+            navbarColumn.classList.add("d-none");
+            navbarColumn.classList.remove("d-block");
+            nonNavbarColumn.classList.add("d-block");
+            nonNavbarColumn.classList.remove("d-none");
+        }
     }
 };
