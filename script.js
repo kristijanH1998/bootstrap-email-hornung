@@ -275,3 +275,8 @@ document.getElementById("trash-btn").onclick = function() {
         document.getElementById("message-body-col").classList.add("d-none");
     }
 };
+
+window.onload = function(){
+    document.getElementById("exampleFormControlTextarea1").value = "";
+}
+    
