@@ -275,6 +275,76 @@ document.getElementById("trash-btn").onclick = function() {
         document.getElementById("message-body-col").classList.add("d-none");
     }
 };
+//show scheduled message list when "Scheduled" button is clicked
+document.getElementById("scheduled-btn").onclick = function() {
+    let folders = document.getElementsByClassName("email-list");
+    console.log(folders);
+    for(var i = 0; i < folders.length; i++) {
+        if(!(folders[i].classList.contains("d-none"))){
+            folders[i].classList.add("d-none")
+        }
+    }
+    document.getElementsByClassName("scheduled")[0].classList.remove("d-none");
+    if((window.innerWidth >= 576) && (window.innerWidth < 768)){
+        document.getElementById("message-list-col").classList.remove("d-none");
+        document.getElementById("message-body-col").classList.add("d-none");
+        if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
+        document.getElementById("message-body-col").classList.contains("d-sm-block")){
+            document.getElementById("message-list-col").classList.remove("d-sm-none");
+            document.getElementById("message-body-col").classList.remove("d-sm-block");
+        } 
+    }
+    if(window.innerWidth < 576) {
+        if (navbarColumn.classList.contains("d-none")){
+            navbarColumn.classList.remove("d-none");
+            navbarColumn.classList.add("d-block");
+            nonNavbarColumn.classList.remove("d-block");
+            nonNavbarColumn.classList.add("d-none");
+        } else {
+            navbarColumn.classList.add("d-none");
+            navbarColumn.classList.remove("d-block");
+            nonNavbarColumn.classList.add("d-block");
+            nonNavbarColumn.classList.remove("d-none");
+        }
+        document.getElementById("message-list-col").classList.remove("d-none");
+        document.getElementById("message-body-col").classList.add("d-none");
+    }
+};
+//show spam message list when "Spam" button is clicked
+document.getElementById("spam-btn").onclick = function() {
+    let folders = document.getElementsByClassName("email-list");
+    console.log(folders);
+    for(var i = 0; i < folders.length; i++) {
+        if(!(folders[i].classList.contains("d-none"))){
+            folders[i].classList.add("d-none")
+        }
+    }
+    document.getElementsByClassName("spam")[0].classList.remove("d-none");
+    if((window.innerWidth >= 576) && (window.innerWidth < 768)){
+        document.getElementById("message-list-col").classList.remove("d-none");
+        document.getElementById("message-body-col").classList.add("d-none");
+        if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
+        document.getElementById("message-body-col").classList.contains("d-sm-block")){
+            document.getElementById("message-list-col").classList.remove("d-sm-none");
+            document.getElementById("message-body-col").classList.remove("d-sm-block");
+        } 
+    }
+    if(window.innerWidth < 576) {
+        if (navbarColumn.classList.contains("d-none")){
+            navbarColumn.classList.remove("d-none");
+            navbarColumn.classList.add("d-block");
+            nonNavbarColumn.classList.remove("d-block");
+            nonNavbarColumn.classList.add("d-none");
+        } else {
+            navbarColumn.classList.add("d-none");
+            navbarColumn.classList.remove("d-block");
+            nonNavbarColumn.classList.add("d-block");
+            nonNavbarColumn.classList.remove("d-none");
+        }
+        document.getElementById("message-list-col").classList.remove("d-none");
+        document.getElementById("message-body-col").classList.add("d-none");
+    }
+};
 //clears new message input fields when page is reloaded
 window.onload = function(){
     document.getElementById("exampleFormControlTextarea1").value = "";

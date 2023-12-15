@@ -11,7 +11,7 @@
     <div class="container-fluid">
         <div class="row my-row">
           <!--Vertical navigation bar with message folders/categories -->
-            <div class="d-none d-sm-block col-sm dark-bckg3 overflow-auto" id="navbarCol">
+            <div class="d-none d-sm-block col-sm dark-bckg3 vh-100 overflow-scroll" id="navbarCol">
                 <div class="mt-5">
                     <nav class="navbar navbar-expand-lg">
                         <div class="container-fluid d-flex flex-column">
@@ -31,14 +31,22 @@
                                 <button type="button" class="btn btn-outline-light" id="sent-btn">Sent</button>
                                 <button type="button" class="btn btn-outline-light" id="drafts-btn">Drafts</button>
                                 <button type="button" class="btn btn-outline-light" id="trash-btn">Trash</button>
-                                <button type="button" class="btn btn-light">More</button>
+                                <button type="button" class="btn btn-light" data-bs-toggle="collapse" data-bs-target="#more-folders" aria-expanded="false" aria-controls="collapseExample">
+                                  More
+                                </button>
+                                <div class="collapse" id="more-folders">
+                                  <div class="card card-body dark-bckg3 d-flex flex-column row-gap-5 border-0">
+                                    <button type="button" class="btn btn-outline-light" id="scheduled-btn">Scheduled</button>
+                                    <button type="button" class="btn btn-outline-light" id="spam-btn">Spam</button>
+                                  </div>
+                                </div>
                             </div>
                           </div>
                       </nav>
                 </div>
             </div>
             <!--Remaining two columns: Message List Column and Message Text Container Column -->
-            <div class="d-block d-sm-block col-sm-10" id="nonNavbarCol">
+            <div class="d-block d-sm-block col-sm-10 vh-100 overflow-scroll" id="nonNavbarCol">
                 <!--Search bar -->
                 <div class="row">
                     <nav class="navbar navbar-dark bg-dark w-100">
@@ -51,7 +59,7 @@
                           </form>
                     </nav>
                 </div>
-                <div class="row my-row">
+                <div class="row">
                     <!--Message List Column: contains message list for each email folder-->
                     <div class="d-md-block col-md-6 dark-bckg1" id="message-list-col">
                         <!--Inbox messages list-->
@@ -281,6 +289,16 @@
                                 </div>
                             </div>
                           </a>
+                        </div>
+                        <div class="d-none email-list my-2 d-flex row-gap-3 flex-column vh-100 scheduled">
+                                  
+                          <h4>This folder is empty.</h4>       
+                          
+                        </div>
+                        <div class="d-none email-list my-2 d-flex row-gap-3 flex-column vh-100 spam">
+                          
+                          <h4>This folder is empty.</h4>           
+                          
                         </div>
                     </div>
                     <!--Message body column: displays full email message received-->
