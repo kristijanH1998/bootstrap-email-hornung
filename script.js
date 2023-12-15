@@ -275,8 +275,10 @@ document.getElementById("trash-btn").onclick = function() {
         document.getElementById("message-body-col").classList.add("d-none");
     }
 };
-
+//clears new message input fields when page is reloaded
 window.onload = function(){
     document.getElementById("exampleFormControlTextarea1").value = "";
+    document.getElementById("new-msg-subject").value = "";
+    document.getElementById("new-msg-email").value = "";
 }
     
