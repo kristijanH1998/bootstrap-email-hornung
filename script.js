@@ -65,286 +65,48 @@ for(var i = 0; i < navbarToggleBtns.length; i++) {
         } 
     }
 }
-//show inbox message list when "inbox" button is clicked
-document.getElementById("inbox-btn").onclick = function() {
-    let folders = document.getElementsByClassName("email-list");
-    console.log(folders);
-    for(var i = 0; i < folders.length; i++) {
-        if(!(folders[i].classList.contains("d-none"))){
-            folders[i].classList.add("d-none")
+
+let buttonIds = ["inbox-btn", "tagged-btn", "important-btn", "sent-btn", "drafts-btn", 
+    "trash-btn", "scheduled-btn", "spam-btn"];
+
+//show message list when corresponding message category button is clicked
+for(let btn of buttonIds){
+    document.getElementById(btn).onclick = function() {
+        let folders = document.getElementsByClassName("email-list");
+        console.log(folders);
+        for(var i = 0; i < folders.length; i++) {
+            if(!(folders[i].classList.contains("d-none"))){
+                folders[i].classList.add("d-none")
+            }
         }
-    }
-    document.getElementsByClassName("inbox")[0].classList.remove("d-none");
-    if((window.innerWidth >= 576) && (window.innerWidth < 768)){
-        document.getElementById("message-list-col").classList.remove("d-none");
-        document.getElementById("message-body-col").classList.add("d-none");
-        if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
-        document.getElementById("message-body-col").classList.contains("d-sm-block")){
-            document.getElementById("message-list-col").classList.remove("d-sm-none");
-            document.getElementById("message-body-col").classList.remove("d-sm-block");
-        } 
-    }
-    if(window.innerWidth < 576) {
-        if (navbarColumn.classList.contains("d-none")){
-            navbarColumn.classList.remove("d-none");
-            navbarColumn.classList.add("d-block");
-            nonNavbarColumn.classList.remove("d-block");
-            nonNavbarColumn.classList.add("d-none");
-        } else {
-            navbarColumn.classList.add("d-none");
-            navbarColumn.classList.remove("d-block");
-            nonNavbarColumn.classList.add("d-block");
-            nonNavbarColumn.classList.remove("d-none");
+        document.getElementsByClassName(btn.slice(0, -4))[0].classList.remove("d-none");
+        if((window.innerWidth >= 576) && (window.innerWidth < 768)){
+            document.getElementById("message-list-col").classList.remove("d-none");
+            document.getElementById("message-body-col").classList.add("d-none");
+            if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
+            document.getElementById("message-body-col").classList.contains("d-sm-block")){
+                document.getElementById("message-list-col").classList.remove("d-sm-none");
+                document.getElementById("message-body-col").classList.remove("d-sm-block");
+            } 
         }
-        document.getElementById("message-list-col").classList.remove("d-none");
-        document.getElementById("message-body-col").classList.add("d-none");
-    }
-};
-//show tagged message list when "tagged" button is clicked
-document.getElementById("tagged-btn").onclick = function() {
-    let folders = document.getElementsByClassName("email-list");
-    console.log(folders);
-    for(var i = 0; i < folders.length; i++) {
-        if(!(folders[i].classList.contains("d-none"))){
-            folders[i].classList.add("d-none")
+        if(window.innerWidth < 576) {
+            if (navbarColumn.classList.contains("d-none")){
+                navbarColumn.classList.remove("d-none");
+                navbarColumn.classList.add("d-block");
+                nonNavbarColumn.classList.remove("d-block");
+                nonNavbarColumn.classList.add("d-none");
+            } else {
+                navbarColumn.classList.add("d-none");
+                navbarColumn.classList.remove("d-block");
+                nonNavbarColumn.classList.add("d-block");
+                nonNavbarColumn.classList.remove("d-none");
+            }
+            document.getElementById("message-list-col").classList.remove("d-none");
+            document.getElementById("message-body-col").classList.add("d-none");
         }
-    }
-    document.getElementsByClassName("tagged")[0].classList.remove("d-none");
-    if((window.innerWidth >= 576) && (window.innerWidth < 768)){
-        document.getElementById("message-list-col").classList.remove("d-none");
-        document.getElementById("message-body-col").classList.add("d-none");
-        if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
-        document.getElementById("message-body-col").classList.contains("d-sm-block")){
-            document.getElementById("message-list-col").classList.remove("d-sm-none");
-            document.getElementById("message-body-col").classList.remove("d-sm-block");
-        } 
-    }
-    if(window.innerWidth < 576) {
-        if (navbarColumn.classList.contains("d-none")){
-            navbarColumn.classList.remove("d-none");
-            navbarColumn.classList.add("d-block");
-            nonNavbarColumn.classList.remove("d-block");
-            nonNavbarColumn.classList.add("d-none");
-        } else {
-            navbarColumn.classList.add("d-none");
-            navbarColumn.classList.remove("d-block");
-            nonNavbarColumn.classList.add("d-block");
-            nonNavbarColumn.classList.remove("d-none");
-        }
-        document.getElementById("message-list-col").classList.remove("d-none");
-        document.getElementById("message-body-col").classList.add("d-none");
-    }
-};
-//show important message list when "important" button is clicked
-document.getElementById("important-btn").onclick = function() {
-    let folders = document.getElementsByClassName("email-list");
-    console.log(folders);
-    for(var i = 0; i < folders.length; i++) {
-        if(!(folders[i].classList.contains("d-none"))){
-            folders[i].classList.add("d-none")
-        }
-    }
-    document.getElementsByClassName("important")[0].classList.remove("d-none");
-    if((window.innerWidth >= 576) && (window.innerWidth < 768)){
-        document.getElementById("message-list-col").classList.remove("d-none");
-        document.getElementById("message-body-col").classList.add("d-none");
-        if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
-        document.getElementById("message-body-col").classList.contains("d-sm-block")){
-            document.getElementById("message-list-col").classList.remove("d-sm-none");
-            document.getElementById("message-body-col").classList.remove("d-sm-block");
-        } 
-    }
-    if(window.innerWidth < 576) {
-        if (navbarColumn.classList.contains("d-none")){
-            navbarColumn.classList.remove("d-none");
-            navbarColumn.classList.add("d-block");
-            nonNavbarColumn.classList.remove("d-block");
-            nonNavbarColumn.classList.add("d-none");
-        } else {
-            navbarColumn.classList.add("d-none");
-            navbarColumn.classList.remove("d-block");
-            nonNavbarColumn.classList.add("d-block");
-            nonNavbarColumn.classList.remove("d-none");
-        }
-        document.getElementById("message-list-col").classList.remove("d-none");
-        document.getElementById("message-body-col").classList.add("d-none");
-    }
-};
-//show sent message list when "sent" button is clicked
-document.getElementById("sent-btn").onclick = function() {
-    let folders = document.getElementsByClassName("email-list");
-    console.log(folders);
-    for(var i = 0; i < folders.length; i++) {
-        if(!(folders[i].classList.contains("d-none"))){
-            folders[i].classList.add("d-none")
-        }
-    }
-    document.getElementsByClassName("sent")[0].classList.remove("d-none");
-    if((window.innerWidth >= 576) && (window.innerWidth < 768)){
-        document.getElementById("message-list-col").classList.remove("d-none");
-        document.getElementById("message-body-col").classList.add("d-none");
-        if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
-        document.getElementById("message-body-col").classList.contains("d-sm-block")){
-            document.getElementById("message-list-col").classList.remove("d-sm-none");
-            document.getElementById("message-body-col").classList.remove("d-sm-block");
-        } 
-    }
-    if(window.innerWidth < 576) {
-        if (navbarColumn.classList.contains("d-none")){
-            navbarColumn.classList.remove("d-none");
-            navbarColumn.classList.add("d-block");
-            nonNavbarColumn.classList.remove("d-block");
-            nonNavbarColumn.classList.add("d-none");
-        } else {
-            navbarColumn.classList.add("d-none");
-            navbarColumn.classList.remove("d-block");
-            nonNavbarColumn.classList.add("d-block");
-            nonNavbarColumn.classList.remove("d-none");
-        }
-        document.getElementById("message-list-col").classList.remove("d-none");
-        document.getElementById("message-body-col").classList.add("d-none");
-    }
-};
-//show drafts message list when "drafts" button is clicked
-document.getElementById("drafts-btn").onclick = function() {
-    let folders = document.getElementsByClassName("email-list");
-    console.log(folders);
-    for(var i = 0; i < folders.length; i++) {
-        if(!(folders[i].classList.contains("d-none"))){
-            folders[i].classList.add("d-none")
-        }
-    }
-    document.getElementsByClassName("drafts")[0].classList.remove("d-none");
-    if((window.innerWidth >= 576) && (window.innerWidth < 768)){
-        document.getElementById("message-list-col").classList.remove("d-none");
-        document.getElementById("message-body-col").classList.add("d-none");
-        if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
-        document.getElementById("message-body-col").classList.contains("d-sm-block")){
-            document.getElementById("message-list-col").classList.remove("d-sm-none");
-            document.getElementById("message-body-col").classList.remove("d-sm-block");
-        } 
-    }
-    if(window.innerWidth < 576) {
-        if (navbarColumn.classList.contains("d-none")){
-            navbarColumn.classList.remove("d-none");
-            navbarColumn.classList.add("d-block");
-            nonNavbarColumn.classList.remove("d-block");
-            nonNavbarColumn.classList.add("d-none");
-        } else {
-            navbarColumn.classList.add("d-none");
-            navbarColumn.classList.remove("d-block");
-            nonNavbarColumn.classList.add("d-block");
-            nonNavbarColumn.classList.remove("d-none");
-        }
-        document.getElementById("message-list-col").classList.remove("d-none");
-        document.getElementById("message-body-col").classList.add("d-none");
-    }
-};
-//show trash message list when "trash" button is clicked
-document.getElementById("trash-btn").onclick = function() {
-    let folders = document.getElementsByClassName("email-list");
-    console.log(folders);
-    for(var i = 0; i < folders.length; i++) {
-        if(!(folders[i].classList.contains("d-none"))){
-            folders[i].classList.add("d-none")
-        }
-    }
-    document.getElementsByClassName("trash")[0].classList.remove("d-none");
-    if((window.innerWidth >= 576) && (window.innerWidth < 768)){
-        document.getElementById("message-list-col").classList.remove("d-none");
-        document.getElementById("message-body-col").classList.add("d-none");
-        if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
-        document.getElementById("message-body-col").classList.contains("d-sm-block")){
-            document.getElementById("message-list-col").classList.remove("d-sm-none");
-            document.getElementById("message-body-col").classList.remove("d-sm-block");
-        } 
-    }
-    if(window.innerWidth < 576) {
-        if (navbarColumn.classList.contains("d-none")){
-            navbarColumn.classList.remove("d-none");
-            navbarColumn.classList.add("d-block");
-            nonNavbarColumn.classList.remove("d-block");
-            nonNavbarColumn.classList.add("d-none");
-        } else {
-            navbarColumn.classList.add("d-none");
-            navbarColumn.classList.remove("d-block");
-            nonNavbarColumn.classList.add("d-block");
-            nonNavbarColumn.classList.remove("d-none");
-        }
-        document.getElementById("message-list-col").classList.remove("d-none");
-        document.getElementById("message-body-col").classList.add("d-none");
-    }
-};
-//show scheduled message list when "Scheduled" button is clicked
-document.getElementById("scheduled-btn").onclick = function() {
-    let folders = document.getElementsByClassName("email-list");
-    console.log(folders);
-    for(var i = 0; i < folders.length; i++) {
-        if(!(folders[i].classList.contains("d-none"))){
-            folders[i].classList.add("d-none")
-        }
-    }
-    document.getElementsByClassName("scheduled")[0].classList.remove("d-none");
-    if((window.innerWidth >= 576) && (window.innerWidth < 768)){
-        document.getElementById("message-list-col").classList.remove("d-none");
-        document.getElementById("message-body-col").classList.add("d-none");
-        if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
-        document.getElementById("message-body-col").classList.contains("d-sm-block")){
-            document.getElementById("message-list-col").classList.remove("d-sm-none");
-            document.getElementById("message-body-col").classList.remove("d-sm-block");
-        } 
-    }
-    if(window.innerWidth < 576) {
-        if (navbarColumn.classList.contains("d-none")){
-            navbarColumn.classList.remove("d-none");
-            navbarColumn.classList.add("d-block");
-            nonNavbarColumn.classList.remove("d-block");
-            nonNavbarColumn.classList.add("d-none");
-        } else {
-            navbarColumn.classList.add("d-none");
-            navbarColumn.classList.remove("d-block");
-            nonNavbarColumn.classList.add("d-block");
-            nonNavbarColumn.classList.remove("d-none");
-        }
-        document.getElementById("message-list-col").classList.remove("d-none");
-        document.getElementById("message-body-col").classList.add("d-none");
-    }
-};
-//show spam message list when "Spam" button is clicked
-document.getElementById("spam-btn").onclick = function() {
-    let folders = document.getElementsByClassName("email-list");
-    console.log(folders);
-    for(var i = 0; i < folders.length; i++) {
-        if(!(folders[i].classList.contains("d-none"))){
-            folders[i].classList.add("d-none")
-        }
-    }
-    document.getElementsByClassName("spam")[0].classList.remove("d-none");
-    if((window.innerWidth >= 576) && (window.innerWidth < 768)){
-        document.getElementById("message-list-col").classList.remove("d-none");
-        document.getElementById("message-body-col").classList.add("d-none");
-        if(document.getElementById("message-list-col").classList.contains("d-sm-none") &&
-        document.getElementById("message-body-col").classList.contains("d-sm-block")){
-            document.getElementById("message-list-col").classList.remove("d-sm-none");
-            document.getElementById("message-body-col").classList.remove("d-sm-block");
-        } 
-    }
-    if(window.innerWidth < 576) {
-        if (navbarColumn.classList.contains("d-none")){
-            navbarColumn.classList.remove("d-none");
-            navbarColumn.classList.add("d-block");
-            nonNavbarColumn.classList.remove("d-block");
-            nonNavbarColumn.classList.add("d-none");
-        } else {
-            navbarColumn.classList.add("d-none");
-            navbarColumn.classList.remove("d-block");
-            nonNavbarColumn.classList.add("d-block");
-            nonNavbarColumn.classList.remove("d-none");
-        }
-        document.getElementById("message-list-col").classList.remove("d-none");
-        document.getElementById("message-body-col").classList.add("d-none");
-    }
-};
+    };
+}
+
 //clears new message input fields when page is reloaded
 window.onload = function(){
     document.getElementById("exampleFormControlTextarea1").value = "";
