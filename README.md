@@ -49,3 +49,8 @@ Bootstrap Grid Project - final JavaScript project for BVT Module 1 (Introduction
 ![start screen - home page](/screenshots/home-page-inbox.png?raw=true "Starting Page")
 * Click on any button in the vertical navigation bar on the left and it will take you to various message folders, from Inbox to Trash:
 ![Sent folder](/screenshots/message-folder-sent.png?raw=true "'Sent' folder")
+* To see more folders, click on 'More' button
+* To open a modal for sending new messages, click on 'Compose'
+![New Message Modal](/screenshots/compose-modal.png?raw=true "New Message Modal")
+* Click on any message card in the message list section to see full contents of the message on the right:
+![Message Container](/screenshots/message-card-full-message.png?raw=true "Full Message Container")
