@@ -54,3 +54,6 @@ Bootstrap Grid Project - final JavaScript project for BVT Module 1 (Introduction
 ![New Message Modal](/screenshots/compose-modal.png?raw=true "New Message Modal")
 * Click on any message card in the message list section to see full contents of the message on the right:
 ![Message Container](/screenshots/message-card-full-message.png?raw=true "Full Message Container")
+* To reply to any message and open a modal for writing response, click on 'Reply' at bottom right corner of message container on the right
+* To collapse or hide the vertical navigation bar on the left, click on the hamburger menu button to the left of the search bar:
+![Collapse/Hide Navigation Bar](/screenshots/navbar-collapse.png?raw=true "Collapse/Hide Navigation Bar")
