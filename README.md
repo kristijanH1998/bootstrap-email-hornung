@@ -23,5 +23,27 @@ Bootstrap Grid Project - final JavaScript project for BVT Module 1 (Introduction
 #### Features to be implemented in the future
 * Delete buttons on message cards to be able to delete messages in folders
 * Search bar functionality - to search for messages by title
-* Connecting this frontend application to backend code to arrive at a full-stack application for sending and receiving emails
+* Connecting this frontend application to backend code to arrive at a full-stack application for sending and receiving emails, and replying to received messages
 
+#### Motivation
+* I made this project to learn more about creating responsive webpages with Bootstrap, and also to improve my front-end development skills in JS/HTML/CSS
+
+#### Things I learned
+* This project taught me how to use Bootstrap breakpoint classes to make design components responsive to screens for different devices
+* I also learned a lot about making user interfaces (UIs) as part of frontend development
+* Coming back to the project a couple months after it was finished, I realized that I can apply DRY (Don't Repeat Yourself) principle to the script.js by replacing repetitive .onclick event listener code for each button in the vertical navigation bar (for each message folder) with a more abstract single for loop that creates a click listener for all of those buttons, and opens corresponding sections for message list and message container. This optimization reduced the script file by more than 280 lines of code.
+
+## How to Run the Project 
+1. Download and install VS Code editor [here](https://code.visualstudio.com/download)
+2. Use the terminal in VS Code (Bash, PowerShell, depending on the OS) to download and install Node.js, find instructions [here](https://nodejs.org/en/download/package-manager)
+3. Use VS Code 'Extensions' page to search for and install latest version of 'HTML CSS Support' dependency (CSS Intellisense for HTML)
+4. Use VS Code 'Extensions' page to search for and install latest version of 'Live Server' extension (to be able to run local development server)
+5. (optional) Use VS Code 'Extensions' page to search for and install latest version of 'JavaScript (ES6) code snippets'
+6. Use VS Code 'Extensions' page to search for and install latest version of 'ESLint' to integrate ESLint JavaScript into your code editor
+7. Follow instructions on [this](https://github.com/git-guides/install-git) link to install Git
+8. Choose the location (directory) for the project repository, navigate to it with 'cd [directory-name]' terminal command and inside of it clone the project repository by running the command 'git clone https://github.com/kristijanH1998/bootstrap-email-hornung.git' in your terminal
+9. Select and open 'index.html' file in the code editor, and click on 'Go Live' button at the bottom right bar in VS Code - this should open the app in your default web browser
+
+## How to Use the Project
+* When the application opens in your browser, you should see a template like this:
+![start screen - home page](/screenshots/bootstrap-email-1.png?raw=true "Starting Page")
