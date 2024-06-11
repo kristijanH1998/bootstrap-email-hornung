@@ -46,4 +46,6 @@ Bootstrap Grid Project - final JavaScript project for BVT Module 1 (Introduction
 
 ## How to Use the Project
 * When the application opens in your browser, you should see a template like this:
-![start screen - home page](/screenshots/bootstrap-email-1.png?raw=true "Starting Page")
+![start screen - home page](/screenshots/home-page-inbox.png?raw=true "Starting Page")
+* Click on any button in the vertical navigation bar on the left and it will take you to various message folders, from Inbox to Trash:
+![Sent folder](/screenshots/message-folder-sent.png?raw=true "'Sent' folder")
