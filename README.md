@@ -57,9 +57,18 @@ Bootstrap Grid Project - final JavaScript project for BVT Module 1 (Introduction
 * To reply to any message and open a modal for writing response, click on 'Reply' at bottom right corner of message container on the right
 * To collapse or hide the vertical navigation bar on the left, click on the hamburger menu button to the left of the search bar:
 ![Collapse/Hide Navigation Bar](/screenshots/navbar-collapse.png?raw=true "Collapse/Hide Navigation Bar")
-* These screenshots show how the app looks like on tablet-size screens:
+* On tablet-size screens the app looks like this:
 <p align="middle"> 
     <img src="/screenshots/tablet-screen-1.png" width="500" height="600" hspace="20" title="Tablet Screen Home">
     <img src="/screenshots/tablet-screen-2.png" width="500" height="600" hspace="20" title="Tablet Screen Message Modal">
     <img src="/screenshots/tablet-screen-3.png" width="500" height="600" hspace="20" title="Tablet Screen Navbar Hidden">
+</p>
+
+* This design is for smartphone-size screens:
+<p align="middle"> 
+    <img src="/screenshots/phone-screen-compose.png" width="400" height="500" hspace="20" title="Phone Screen Home">
+    <img src="/screenshots/phone-screen-home.png" width="400" height="500" hspace="20" title="Phone Screen Message Modal">
+    <img src="/screenshots/phone-screen-message-body.png" width="400" height="500" hspace="20" title="Phone Screen Navbar Hidden">
+    <img src="/screenshots/phone-screen-message-list.png" width="400" height="500" hspace="20" title="Phone Screen Navbar Hidden">
+    <img src="/screenshots/phone-screen-reply.png" width="400" height="500" hspace="20" title="Phone Screen Navbar Hidden">
 </p>
