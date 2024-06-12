@@ -77,7 +77,7 @@ Bootstrap Grid Project - final JavaScript project for BVT Module 1 (Introduction
 * The developer log I wrote while working on this project can be found [here](https://docs.google.com/document/d/1bZKHxkwwpi6m7Pe5aHMEFJIM62siRdowYAh1XV8M5ow/edit?usp=sharing)
 * These are wireframe images that outline the structure and functionality of the application and show its interface on each of the three different device types (PC, tablet, mobile phone):
 <p align="middle"> 
-    <img src="/screenshots/fullscreen-desktop-design.png" width="800" height="600" hspace="20" title="Desktop Fullscreen Outline">
-    <img src="/screenshots/tablet-half-desktop-design.png" width="800" height="600" hspace="20" title="Tablet Outline">
-    <img src="/screenshots/mobile-phone-screen-design.png" width="800" height="600" hspace="20" title="Mobile Phone Outline">
+    <img src="/screenshots/fullscreen-desktop-design.png" width="950" height="600" hspace="20" title="Desktop Fullscreen Outline">
+    <img src="/screenshots/tablet-half-desktop-design.png" width="950" height="600" hspace="20" title="Tablet Outline">
+    <img src="/screenshots/mobile-phone-screen-design.png" width="950" height="600" hspace="20" title="Mobile Phone Outline">
 </p>
