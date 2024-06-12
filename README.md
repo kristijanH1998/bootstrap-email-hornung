@@ -9,7 +9,7 @@ Bootstrap Grid Project - final JavaScript project for BVT Module 1 (Introduction
 
 ## Description
 #### Overview and Technologies used
-* Responsive email template and design made in JavaScript/HTML/CSS with Bootstrap CSS framework. 
+* Responsive email template and design made in JavaScript/HTML/CSS with Bootstrap framework and CSS Flexbox method. 
 * JS/HTML/CSS tech stack was chosen due to its popularity in front-end web development, effectiveness in making responsive and interactive user interfaces, cross-browser compatibility, and the level of community support that exists for it (in the form of online resources and tutorials)
 * Bootstrap library was chosen because of its ease of use, responsiveness of components across different screen sizes, cross-browser compatibility, consistency, and mainly customizability of its existing solutions (components, design classes, etc.) 
 * Visual Studio Code was used for code editing and Git for version control, since these tools are most widely used in web development for code editing and source code version tracking
@@ -68,7 +68,16 @@ Bootstrap Grid Project - final JavaScript project for BVT Module 1 (Introduction
 <p align="middle"> 
     <img src="/screenshots/phone-screen-compose.png" width="300" height="600" hspace="20" title="Phone Screen Home">
     <img src="/screenshots/phone-screen-home.png" width="300" height="600" hspace="20" title="Phone Screen Message Modal">
-    <img src="/screenshots/phone-screen-message-body.png" width="300" height="600" hspace="20" title="Phone Screen Navbar Hidden">
-    <img src="/screenshots/phone-screen-message-list.png" width="300" height="600" hspace="20" title="Phone Screen Navbar Hidden">
-    <img src="/screenshots/phone-screen-reply.png" width="300" height="600" hspace="20" title="Phone Screen Navbar Hidden">
+    <img src="/screenshots/phone-screen-message-body.png" width="300" height="600" hspace="20" title="Phone Screen Message Container">
+    <img src="/screenshots/phone-screen-message-list.png" width="300" height="600" hspace="20" title="Phone Screen Message List">
+    <img src="/screenshots/phone-screen-reply.png" width="300" height="600" hspace="20" title="Phone Screen Reply">
+</p>
+
+## Developer Log, Wireframe
+* The developer log I wrote while working on this project can be found [here](https://docs.google.com/document/d/1bZKHxkwwpi6m7Pe5aHMEFJIM62siRdowYAh1XV8M5ow/edit?usp=sharing)
+* These are wireframe images that outline the structure and functionality of the application and show its interface on each of the three different device types (PC, tablet, mobile phone):
+<p align="middle"> 
+    <img src="/screenshots/fullscreen-desktop-design.png" width="500" height="600" hspace="20" title="Desktop Fullscreen Outline">
+    <img src="/screenshots/tablet-half-desktop-design.png" width="500" height="600" hspace="20" title="Tablet Outline">
+    <img src="/screenshots/mobile-phone-screen-design.png" width="500" height="600" hspace="20" title="Mobile Phone Outline">
 </p>
