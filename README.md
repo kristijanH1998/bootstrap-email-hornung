@@ -58,6 +58,13 @@ Bootstrap Grid Project - final JavaScript project for BVT Module 1 (Introduction
 * To collapse or hide the vertical navigation bar on the left, click on the hamburger menu button to the left of the search bar:
 ![Collapse/Hide Navigation Bar](/screenshots/navbar-collapse.png?raw=true "Collapse/Hide Navigation Bar")
 * These screenshots show how the app looks like on tablet-size screens:
-![Tablet Screen Home](/screenshots/tablet-screen-1.png?raw=true "Tablet Screen Home")
+<p align="middle"> 
+    <img src="/screenshots/tablet-screen-1.png" width="100" height="100" hspace="20" title="Tablet Screen Home">
+    <img src="/screenshots/tablet-screen-2.png" width="100" height="100" hspace="20" title="Tablet Screen Message Modal">
+    <img src="/screenshots/tablet-screen-3.png" width="100" height="100" hspace="20" title="Tablet Screen Navbar Hidden">
+</p>
+
+
+<!-- ![Tablet Screen Home](/screenshots/tablet-screen-1.png?raw=true "Tablet Screen Home")
 ![Tablet Screen Message Modal](/screenshots/tablet-screen-2.png?raw=true "Tablet Screen Message Modal")
-![Tablet Screen Navbar Hidden](/screenshots/tablet-screen-3.png?raw=true "Tablet Screen Navbar Hidden")
+![Tablet Screen Navbar Hidden](/screenshots/tablet-screen-3.png?raw=true "Tablet Screen Navbar Hidden") -->
