@@ -57,3 +57,7 @@ Bootstrap Grid Project - final JavaScript project for BVT Module 1 (Introduction
 * To reply to any message and open a modal for writing response, click on 'Reply' at bottom right corner of message container on the right
 * To collapse or hide the vertical navigation bar on the left, click on the hamburger menu button to the left of the search bar:
 ![Collapse/Hide Navigation Bar](/screenshots/navbar-collapse.png?raw=true "Collapse/Hide Navigation Bar")
+* These screenshots show how the app looks like on tablet-size screens:
+![Tablet Screen Home](/screenshots/tablet-screen-1.png?raw=true "Tablet Screen Home")
+![Tablet Screen Message Modal](/screenshots/tablet-screen-2.png?raw=true "Tablet Screen Message Modal")
+![Tablet Screen Navbar Hidden](/screenshots/tablet-screen-3.png?raw=true "Tablet Screen Navbar Hidden")
