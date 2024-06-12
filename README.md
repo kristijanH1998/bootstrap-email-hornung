@@ -59,9 +59,9 @@ Bootstrap Grid Project - final JavaScript project for BVT Module 1 (Introduction
 ![Collapse/Hide Navigation Bar](/screenshots/navbar-collapse.png?raw=true "Collapse/Hide Navigation Bar")
 * These screenshots show how the app looks like on tablet-size screens:
 <p align="middle"> 
-    <img src="/screenshots/tablet-screen-1.png" width="100" height="100" hspace="20" title="Tablet Screen Home">
-    <img src="/screenshots/tablet-screen-2.png" width="100" height="100" hspace="20" title="Tablet Screen Message Modal">
-    <img src="/screenshots/tablet-screen-3.png" width="100" height="100" hspace="20" title="Tablet Screen Navbar Hidden">
+    <img src="/screenshots/tablet-screen-1.png" width="300" height="300" hspace="20" title="Tablet Screen Home">
+    <img src="/screenshots/tablet-screen-2.png" width="300" height="300" hspace="20" title="Tablet Screen Message Modal">
+    <img src="/screenshots/tablet-screen-3.png" width="300" height="300" hspace="20" title="Tablet Screen Navbar Hidden">
 </p>
 
 
