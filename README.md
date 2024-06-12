@@ -5,7 +5,7 @@ Bootstrap Grid Project - final JavaScript project for BVT Module 1 (Introduction
 - [Description](#description)
 - [How to Run the Project](#how-to-run-the-project)
 - [How to Use the Project](#how-to-use-the-project)
-- [Credits, Developer Log, Wireframe](#credits-developer-log-wireframe)
+- [Developer Log, Wireframe](#developer-log-wireframe)
 
 ## Description
 #### Overview and Technologies used
