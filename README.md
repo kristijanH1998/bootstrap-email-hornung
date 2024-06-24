@@ -1,5 +1,5 @@
 # Email Front-end Web Application
-Bootstrap Grid Project - final JavaScript project for BVT Module 1 (Introduction to HTML and CSS)
+Bootstrap Grid Project - final project for BVT Module 1 (Introduction to HTML and CSS)
 
 ## Table of Contents
 - [Description](#description)
