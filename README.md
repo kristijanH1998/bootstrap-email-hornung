@@ -33,7 +33,9 @@ Bootstrap Grid Project - final project for BVT Module 1 (Introduction to HTML an
 * I also learned a lot about making user interfaces (UIs) as part of frontend development
 * Coming back to the project a couple months after it was finished, I realized that I can apply DRY (Don't Repeat Yourself) principle to the script.js by replacing repetitive .onclick event listener code for each button in the vertical navigation bar (for each message folder) with a more abstract single for loop that creates a click listener for all of those buttons, and opens corresponding sections for message list and message container. This optimization reduced the script file by more than 280 lines of code.
 
-## How to Run the Project 
+## How to Run the Project
+To run the app on Netlify without making a local repository clone and setting up environment, click here: [***Run Email App***](https://email-app-kh.netlify.app/)\
+<br/> 
 1. Download and install VS Code editor [here](https://code.visualstudio.com/download)
 2. Use the terminal in VS Code (Bash, PowerShell, depending on the OS) to download and install Node.js, find instructions [here](https://nodejs.org/en/download/package-manager)
 3. Use VS Code 'Extensions' page to search for and install latest version of 'HTML CSS Support' dependency (CSS Intellisense for HTML)
