@@ -35,7 +35,8 @@ Bootstrap Grid Project - final project for BVT Module 1 (Introduction to HTML an
 
 ## How to Run the Project
 To run the app on Netlify without making a local repository clone and setting up environment, click here: [***Run Email App***](https://email-app-kh.netlify.app/)\
-<br/> 
+<br/>
+Otherwise, follow installation process described below: 
 1. Download and install VS Code editor [here](https://code.visualstudio.com/download)
 2. Use the terminal in VS Code (Bash, PowerShell, depending on the OS) to download and install Node.js, find instructions [here](https://nodejs.org/en/download/package-manager)
 3. Use VS Code 'Extensions' page to search for and install latest version of 'HTML CSS Support' dependency (CSS Intellisense for HTML)
